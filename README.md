@@ -1,4 +1,4 @@
-# Tabelas trabalhistas CLT 2026 em JSON (INSS, IRRF, redução da Lei 15.270, FGTS, aviso prévio)
+# Tabelas trabalhistas CLT 2026 em JSON (INSS, IRRF, redução da Lei 15.270, seguro-desemprego, FGTS, aviso prévio)
 
 Registro aberto dos valores oficiais usados na folha de pagamento brasileira em 2026, com **fonte oficial, data de vigência e data da última conferência** em cada item. Mantido pelo [ContaCLT](https://contaclt.com/) — as mesmas tabelas alimentam as calculadoras de [rescisão](https://contaclt.com/calculadora-rescisao/), [salário líquido](https://contaclt.com/calculadora-salario-liquido/), [13º](https://contaclt.com/calculadora-decimo-terceiro/) e [férias](https://contaclt.com/calculadora-ferias/).
 
@@ -6,7 +6,7 @@ Registro aberto dos valores oficiais usados na folha de pagamento brasileira em 
 
 | Arquivo | Conteúdo |
 |---|---|
-| [`dados/regras-2026.json`](dados/regras-2026.json) | Salário mínimo, INSS 2026, IRRF mensal, redução do IR (Lei 15.270/2025), FGTS, aviso prévio e prazos do 13º |
+| [`dados/regras-2026.json`](dados/regras-2026.json) | Salário mínimo, INSS 2026, IRRF mensal, redução do IR (Lei 15.270/2025), seguro-desemprego, adicional noturno, insalubridade/periculosidade, FGTS, aviso prévio e prazos do 13º |
 | [`dados/regras-2025.json`](dados/regras-2025.json) | Valores de 2025 para comparação (INSS da Portaria MPS/MF nº 6/2025; IRRF de maio a dezembro de 2025) |
 | [`exemplos/inss-irrf-2026.mjs`](exemplos/inss-irrf-2026.mjs) | Exemplo em JavaScript: INSS progressivo e IRRF com a redução de 2026 |
 
@@ -40,6 +40,16 @@ Dedução por dependente R$ 189,59; desconto simplificado R$ 607,20 (usa-se o ma
 - até R$ 5.000,00: redução de até R$ 312,89, zerando o imposto;
 - de R$ 5.000,01 a R$ 7.350,00: redução = R$ 978,62 − 0,133145 × rendimento;
 - acima de R$ 7.350,00: sem redução. Aplica-se também ao 13º salário.
+
+**Seguro-desemprego** — tabela anual do MTE, vigente desde 11/01/2026
+
+| Média salarial | Parcela |
+|---|---|
+| Até R$ 2.222,17 | Média × 0,8 (mínimo R$ 1.621,00) |
+| De R$ 2.222,18 até R$ 3.703,99 | R$ 1.777,74 + 50% do que passar de R$ 2.222,17 |
+| Acima de R$ 3.703,99 | R$ 2.518,65 (teto) |
+
+Calculadora: [contaclt.com/calculadora-seguro-desemprego](https://contaclt.com/calculadora-seguro-desemprego/).
 
 ## Exemplo
 

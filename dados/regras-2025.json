@@ -104,5 +104,70 @@
     "sourceNote": "Lei nº 4.090/1962 e Lei nº 4.749/1965; fração de 15 dias ou mais conta como mês inteiro",
     "verifiedAt": "2026-10-04"
   },
-  "comparisonOnly": true
+  "comparisonOnly": true,
+  "seguroDesemprego": {
+    "effectiveFrom": "2025-01-11",
+    "band1UpTo": 2138.76,
+    "band1Rate": 0.8,
+    "band2UpTo": 3564.96,
+    "band2Rate": 0.5,
+    "band2Fixed": 1711.01,
+    "ceiling": 2424.11,
+    "floor": 1518.0,
+    "eligibilityMonths": {
+      "1": 12,
+      "2": 9,
+      "3": 6
+    },
+    "parcels": [
+      {
+        "minMonths": 6,
+        "parcels": 3
+      },
+      {
+        "minMonths": 12,
+        "parcels": 4
+      },
+      {
+        "minMonths": 24,
+        "parcels": 5
+      }
+    ],
+    "requestWindowDays": [
+      7,
+      120
+    ],
+    "source": "https://www.gov.br/trabalho-e-emprego/pt-br/servicos/trabalhador/seguro-desemprego",
+    "sourceNote": "Tabela anual do Seguro-Desemprego do MTE de 2025 (para comparação)",
+    "verifiedAt": "2026-10-04",
+    "nextReview": null
+  },
+  "adicionalNoturno": {
+    "urbanRate": 0.2,
+    "urbanWindow": "22h às 5h",
+    "reducedHourMinutes": 52.5,
+    "ruralRate": 0.25,
+    "ruralWindows": {
+      "lavoura": "21h às 5h",
+      "pecuaria": "20h às 4h"
+    },
+    "source": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+    "sourceNote": "CLT, art. 73 (urbano: 20%, hora noturna de 52min30s, 22h às 5h); Lei 5.889/1973, art. 7º (rural: 25%); Súmula 60 do TST (prorrogação após as 5h)",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "adicionaisRisco": {
+    "insalubridade": {
+      "minimo": 0.1,
+      "medio": 0.2,
+      "maximo": 0.4
+    },
+    "insalubridadeBase": "salarioMinimo",
+    "periculosidade": 0.3,
+    "cumulative": false,
+    "source": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+    "sourceNote": "CLT, arts. 192 e 193 (insalubridade de 10%, 20% ou 40% do salário mínimo; periculosidade de 30% do salário-base; opção pelo mais vantajoso, art. 193 §2º); NR-15 e NR-16; Súmula Vinculante 4 do STF",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  }
 }
