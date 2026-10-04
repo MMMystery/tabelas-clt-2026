@@ -303,5 +303,48 @@
     "sourceNote": "Lei 8.036/1990, arts. 20-A a 20-D e Anexo (incluídos pela Lei 13.932/2019): alíquota e parcela adicional sobre o saldo de todas as contas; saque do 1º dia útil do mês de aniversário ao último dia útil do 2º mês seguinte; volta ao saque-rescisão só no 25º mês após o pedido. Antecipação: regras do Conselho Curador do FGTS vigentes desde 01/11/2025 (carência de 90 dias, parcelas de R$ 100 a R$ 500, até 5 parcelas até 31/10/2026 e até 3 depois, 1 contrato por ano)",
     "verifiedAt": "2026-10-05",
     "nextReview": "2026-11-03"
+  },
+  "inssContribuintes": {
+    "individualRate": 0.2,
+    "simplifiedRate": 0.11,
+    "lowIncomeRate": 0.05,
+    "serviceRetentionRate": 0.11,
+    "dueDay": 15,
+    "codes": {
+      "individual": "1007",
+      "individualSimplificado": "1163",
+      "facultativo": "1406",
+      "facultativoSimplificado": "1473",
+      "baixaRenda": "1929"
+    },
+    "source": "https://www.gov.br/inss/pt-br/direitos-e-deveres/inscricao-e-contribuicao/tabela-de-contribuicao-mensal",
+    "sourceNote": "Lei 8.212/1991, arts. 21 e 30 (contribuinte individual e facultativo: 20% entre o salário mínimo e o teto; plano simplificado 11% do salário mínimo; facultativo de baixa renda 5%; contribuinte que presta serviço a empresa: 11% retidos); vencimento dia 15 do mês seguinte; teto e piso de 2026 pela Portaria Interministerial MPS/MF nº 13/2026",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2027-01-12"
+  },
+  "jornada": {
+    "dailyLimitHours": 8,
+    "weeklyLimitHours": 44,
+    "monthlyWeeks": 5,
+    "intervalMinOver6hMinutes": 60,
+    "intervalMaxHours": 2,
+    "intervalMinOver4hMinutes": 15,
+    "intervalSuppressedRate": 0.5,
+    "restBetweenShiftsHours": 11,
+    "source": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+    "sourceNote": "CF, art. 7º, XIII (8 horas diárias e 44 semanais); CLT, arts. 58, 59, 66 e 71 (intervalo de 1 a 2 horas acima de 6 horas e de 15 minutos entre 4 e 6 horas; intervalo suprimido pago com 50% de forma indenizatória, §4º; 11 horas entre jornadas); divisor mensal de 220 horas (44 × 5)",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2027-01-10"
+  },
+  "salarioMaternidade": {
+    "days": 120,
+    "extendedDays": 180,
+    "abortionDays": 14,
+    "requestBeforeBirthDays": 28,
+    "carenciaRequired": false,
+    "source": "https://www.gov.br/inss/pt-br/direitos-e-deveres/salario-maternidade",
+    "sourceNote": "Lei 8.213/1991, arts. 71 a 73 (empregada: remuneração integral; doméstica: último salário de contribuição; contribuinte individual, facultativa e desempregada: 1/12 dos 12 últimos salários de contribuição em até 15 meses, entre o salário mínimo e o teto; MEI e segurada especial: salário mínimo); STF, ADIs 2110 e 2111 (2024), e IN PRES/INSS 188/2025 afastaram a carência de 10 meses; Lei 11.770/2008 (Empresa Cidadã: +60 dias)",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2027-01-12"
   }
 }
