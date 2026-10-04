@@ -1,0 +1,87 @@
+{
+  "year": 2026,
+  "currency": "BRL",
+  "updatedAt": "2026-10-04",
+  "salarioMinimo": {
+    "value": 1621.0,
+    "effectiveFrom": "2026-01-01",
+    "source": "https://www.gov.br/previdencia/pt-br",
+    "sourceNote": "Portaria Interministerial MPS/MF nº 13, de 9 de janeiro de 2026 (piso do salário de contribuição)",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2026-12-15"
+  },
+  "inss": {
+    "effectiveFrom": "2026-01-01",
+    "bands": [
+      { "upTo": 1621.0, "rate": 0.075 },
+      { "upTo": 2902.84, "rate": 0.09 },
+      { "upTo": 4354.27, "rate": 0.12 },
+      { "upTo": 8475.55, "rate": 0.14 }
+    ],
+    "ceiling": 8475.55,
+    "source": "https://www.gov.br/previdencia/pt-br",
+    "sourceNote": "Portaria Interministerial MPS/MF nº 13/2026. Cálculo por faixas; contribuição máxima de R$ 988,09 pelo cálculo faixa a faixa (algumas transcrições citam R$ 988,07 — divergência registrada para conferência no DOU).",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "irrf": {
+    "effectiveFrom": "2025-05-01",
+    "bands": [
+      { "upTo": 2428.8, "rate": 0, "deduct": 0 },
+      { "upTo": 2826.65, "rate": 0.075, "deduct": 182.16 },
+      { "upTo": 3751.05, "rate": 0.15, "deduct": 394.16 },
+      { "upTo": 4664.68, "rate": 0.225, "deduct": 675.49 },
+      { "upTo": null, "rate": 0.275, "deduct": 908.73 }
+    ],
+    "dependentDeduction": 189.59,
+    "simplifiedDiscount": 607.2,
+    "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15191.htm",
+    "sourceNote": "Lei nº 15.191/2025 e tabela mensal publicada pela Receita Federal. Desconto simplificado substitui as deduções legais quando for mais vantajoso.",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "irrfReduction": {
+    "effectiveFrom": "2026-01-01",
+    "fullExemptionUpTo": 5000.0,
+    "maxReduction": 312.89,
+    "phaseOutUpTo": 7350.0,
+    "phaseOutConstant": 978.62,
+    "phaseOutFactor": 0.133145,
+    "appliesTo13th": true,
+    "source": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/L15270.htm",
+    "sourceNote": "Lei nº 15.270/2025 (art. 3º-A da Lei 9.250/1995). Base: rendimentos tributáveis brutos do mês; o 13º tem aplicação própria (§3º).",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "fgts": {
+    "depositRate": 0.08,
+    "penaltyDismissal": 0.4,
+    "penaltyAgreement": 0.2,
+    "withdrawAgreement": 0.8,
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm",
+    "sourceNote": "Lei nº 8.036/1990 (art. 15 e art. 18) e CLT art. 484-A (acordo)",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "avisoPrevio": {
+    "baseDays": 30,
+    "extraDaysPerYear": 3,
+    "maxDays": 90,
+    "source": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12506.htm",
+    "sourceNote": "Lei nº 12.506/2011; acréscimo de 3 dias por ano completo de serviço, até 90 dias",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "clt": {
+    "source": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+    "sourceNote": "CLT: férias (arts. 129–146), aviso prévio (art. 487), prazo de pagamento da rescisão (art. 477 §6º), acordo (art. 484-A), contrato a prazo (arts. 479–480)",
+    "verifiedAt": "2026-10-04"
+  },
+  "decimoTerceiro": {
+    "firstInstallmentDeadline": "11-30",
+    "secondInstallmentDeadline": "12-20",
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/l4749.htm",
+    "sourceNote": "Lei nº 4.090/1962 e Lei nº 4.749/1965; fração de 15 dias ou mais conta como mês inteiro",
+    "verifiedAt": "2026-10-04"
+  }
+}
