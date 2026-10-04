@@ -1,7 +1,7 @@
 {
   "year": 2026,
   "currency": "BRL",
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "salarioMinimo": {
     "value": 1621.0,
     "effectiveFrom": "2026-01-01",
@@ -180,5 +180,128 @@
     "sourceNote": "CLT, arts. 192 e 193 (insalubridade de 10%, 20% ou 40% do salário mínimo; periculosidade de 30% do salário-base; opção pelo mais vantajoso, art. 193 §2º); NR-15 e NR-16; Súmula Vinculante 4 do STF",
     "verifiedAt": "2026-10-04",
     "nextReview": "2027-01-10"
+  },
+  "domestico": {
+    "employerInss": 0.08,
+    "gilrat": 0.008,
+    "fgts": 0.08,
+    "indenizacaoCompensatoria": 0.032,
+    "daeDueDay": 7,
+    "daeRounding": "truncate_cents",
+    "valeTransporteMaxDiscount": 0.06,
+    "salarioFamilia": {
+      "quota": 67.54,
+      "incomeLimit": 1980.38,
+      "ageLimit": 14
+    },
+    "seguroDesemprego": {
+      "value": "salarioMinimo",
+      "maxParcels": 3,
+      "monthsRequired": 15,
+      "windowMonths": 24
+    },
+    "compensatoriaRelease": {
+      "sem_justa_causa": "employee",
+      "experiencia_antecipada_empregador": "employee",
+      "fim_experiencia": "employer",
+      "pedido_demissao": "employer",
+      "justa_causa": "employer",
+      "experiencia_antecipada_empregado": "employer",
+      "acordo": "half"
+    },
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp150.htm",
+    "sourceNote": "Lei Complementar nº 150/2015 (arts. 22, 26, 34 e 35): DAE com INSS patronal 8%, seguro contra acidentes 0,8%, FGTS 8% e indenização compensatória 3,2%; seguro-desemprego doméstico de 1 salário mínimo por até 3 meses; salário-família pela Portaria Interministerial MPS/MF nº 13/2026 (R$ 67,54 até R$ 1.980,38). Exemplo de conferência: DAE de R$ 445,76 para salário de R$ 1.621 (valores truncados ao centavo, como no eSocial).",
+    "verifiedAt": "2026-10-04",
+    "nextReview": "2027-01-10"
+  },
+  "salarioFamilia": {
+    "quota": 67.54,
+    "incomeLimit": 1980.38,
+    "ageLimit": 14,
+    "source": "https://www.gov.br/inss/pt-br/direitos-e-deveres/salario-familia",
+    "sourceNote": "Portaria Interministerial MPS/MF nº 13/2026 (cota de R$ 67,54 para remuneração até R$ 1.980,38); Lei 8.213/1991, arts. 65 a 70; Decreto 3.048/1999, arts. 81 a 92 (proporcional aos dias nos meses de admissão e demissão; vacinação até 6 anos e frequência escolar a partir de 4 anos)",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2027-01-12"
+  },
+  "mei": {
+    "inssRate": 0.05,
+    "caminhoneiroInssRate": 0.12,
+    "icms": 1.0,
+    "iss": 5.0,
+    "dueDay": 20,
+    "annualLimit": 81000,
+    "caminhoneiroAnnualLimit": 251600,
+    "excessTolerance": 0.2,
+    "dasnDeadline": "31/05",
+    "effectiveFrom": "2026-02-20",
+    "source": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor",
+    "sourceNote": "LC 123/2006, art. 18-A (INSS de 5% do salário mínimo, ou 12% para o MEI caminhoneiro, + R$ 1 de ICMS e/ou R$ 5 de ISS; limite anual de R$ 81.000, proporcional no ano de abertura; tolerância de 20%); salário mínimo de R$ 1.621 (Decreto 12.797/2025), valores do DAS a partir do vencimento de 20/02/2026",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2027-01-12"
+  },
+  "bancoHoras": {
+    "collectiveMonths": 12,
+    "individualMonths": 6,
+    "overtimeRate": 0.5,
+    "dailyLimitHours": 10,
+    "source": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm",
+    "sourceNote": "CLT, art. 59, §§ 2º, 3º, 5º e 6º (acordo/convenção coletiva: compensação em até 1 ano; acordo individual escrito: até 6 meses; acordo individual tácito ou escrito: no mesmo mês; saldo não compensado na rescisão é pago como hora extra; limite de 10 horas por dia)",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2027-01-10"
+  },
+  "saqueAniversario": {
+    "bands": [
+      {
+        "upTo": 500,
+        "rate": 0.5,
+        "extra": 0
+      },
+      {
+        "upTo": 1000,
+        "rate": 0.4,
+        "extra": 50
+      },
+      {
+        "upTo": 5000,
+        "rate": 0.3,
+        "extra": 150
+      },
+      {
+        "upTo": 10000,
+        "rate": 0.2,
+        "extra": 650
+      },
+      {
+        "upTo": 15000,
+        "rate": 0.15,
+        "extra": 1150
+      },
+      {
+        "upTo": 20000,
+        "rate": 0.1,
+        "extra": 1900
+      },
+      {
+        "upTo": null,
+        "rate": 0.05,
+        "extra": 2900
+      }
+    ],
+    "windowMonths": 3,
+    "returnAfterMonths": 25,
+    "antecipacao": {
+      "effectiveFrom": "2025-11-01",
+      "minParcel": 100,
+      "maxParcel": 500,
+      "maxParcelsFirstYear": 5,
+      "firstYearUntil": "2026-10-31",
+      "maxParcelsAfter": 3,
+      "graceDays": 90,
+      "contractsPerYear": 1
+    },
+    "source": "https://www.fgts.gov.br/Pages/sou-trabalhador/saque-aniversario.aspx",
+    "sourceNote": "Lei 8.036/1990, arts. 20-A a 20-D e Anexo (incluídos pela Lei 13.932/2019): alíquota e parcela adicional sobre o saldo de todas as contas; saque do 1º dia útil do mês de aniversário ao último dia útil do 2º mês seguinte; volta ao saque-rescisão só no 25º mês após o pedido. Antecipação: regras do Conselho Curador do FGTS vigentes desde 01/11/2025 (carência de 90 dias, parcelas de R$ 100 a R$ 500, até 5 parcelas até 31/10/2026 e até 3 depois, 1 contrato por ano)",
+    "verifiedAt": "2026-10-05",
+    "nextReview": "2026-11-03"
   }
 }
