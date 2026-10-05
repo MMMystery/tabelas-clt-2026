@@ -51,6 +51,17 @@ Dedução por dependente R$ 189,59; desconto simplificado R$ 607,20 (usa-se o ma
 
 Calculadora: [contaclt.com/calculadora-seguro-desemprego](https://contaclt.com/calculadora-seguro-desemprego/).
 
+## API grátis (sem chave, CORS liberado)
+
+As mesmas tabelas também estão disponíveis como API de cálculo: [contaclt.com/dados/api](https://contaclt.com/dados/api/).
+
+```sh
+curl "https://contaclt.com/api/v1/irrf?salario=6000"
+curl "https://contaclt.com/api/v1/seguro-desemprego?salario1=3000&salario2=3000&salario3=3000&solicitacao=1&meses=18"
+```
+
+Endpoints: `salario-liquido`, `inss`, `irrf`, `seguro-desemprego`, `saque-aniversario`, `das-mei`, `empregada-domestica` e `tabelas`.
+
 ## Exemplo
 
 ```sh
